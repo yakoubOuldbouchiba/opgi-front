@@ -1,0 +1,78 @@
+.dashbord-nav {
+  background-color: #e5383b;
+  color: #fff;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 10%;
+  font-size: 1.2rem;
+}
+.dashbord-nav .btn {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.dashbord-section {
+  width: 80vw;
+  max-width: 80%;
+  height: fit-content;
+  margin: 10vh auto;
+  display: flex;
+}
+.bien-info {
+  flex: 1;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#locataires {
+  width: 100%;
+  border: 1px solid;
+}
+#locataires th,
+#locataires td {
+  padding-left: 8px;
+}
+#locataires th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#quittances {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#quittances td,
+#quittances th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#quittances tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#quittances tr:hover {
+  background-color: #ddd;
+}
+
+#quittances th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #e5383b;
+  color: white;
+}
+#quittances tfoot {
+  display: flex;
+  border: none;
+  padding: 4px;
+}
+#quittances tfoot td {
+  border: none;
+}

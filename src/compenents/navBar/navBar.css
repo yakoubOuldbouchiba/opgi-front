@@ -1,0 +1,149 @@
+.nav-bar-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  color: #000;
+  background-color: #ffffff;
+  height: fit-content;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80vw;
+  min-width: 80%;
+  justify-content: flex-end;
+  padding: 0.7rem 0rem;
+}
+
+.nav-bar .nav {
+  overflow: hidden;
+  height: 0;
+  transition: height 5s ease-out;
+}
+
+.nav-bar .nav.nav-show {
+  height: fit-content;
+}
+
+.nav-bar .logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-bar .logo .logo-picture {
+  display: block;
+  height: 50px;
+  width: 100px;
+  object-fit: cover;
+}
+.nav-bar .logo .nav-toggle {
+  display: block;
+  color: #e5383b;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 600 ease-out;
+}
+.nav-bar .logo .nav-toggle:hover {
+  transform: rotate(0.25turn);
+}
+.links {
+  list-style-type: none;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding-inline-start: 1.5rem;
+}
+.links li {
+  color: #0b090a;
+}
+
+.links li:hover {
+  color: #ba181b;
+  border-left: 2px solid #ba181b;
+}
+
+.links li .active {
+  color: #e5383b;
+  border-left: 2px solid #e5383b;
+}
+
+.links li a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.4rem;
+}
+.sigin {
+  display: none;
+}
+.sigin.sigin-show {
+  display: block;
+}
+
+.btn.btn-sigin {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  border: none;
+  background-color: #e5383b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 3000 ease-in-out;
+}
+
+.btn.btn-sigin:hover {
+  transform: scale(1.1) translate(0%, 10%);
+}
+
+@media (min-width: 992px) {
+  .nav-bar {
+    flex-direction: row;
+  }
+  .nav-bar .logo .nav-toggle {
+    display: none;
+  }
+  .upper-bar .address .icon,
+  .upper-bar .phone .icon {
+    font-size: 1rem;
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .links li {
+    display: inline-block;
+  }
+  .links li:hover {
+    color: #ba181b;
+    border-bottom: 2px solid #ba181b;
+    border-left: none;
+  }
+
+  .links li .active {
+    color: #e5383b;
+    border-bottom: 2px solid #e5383b;
+    border-left: none;
+  }
+  .nav-bar .logo {
+    flex: 1;
+  }
+  .nav-bar .sigin {
+    flex: 1;
+    display: block;
+  }
+  .nav-bar .nav {
+    flex: 3;
+    height: fit-content;
+  }
+}

@@ -1,0 +1,17 @@
+.alter {
+  text-align: center;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.2rem;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.alter-seccuss {
+  background-color: #abfbd5;
+  color: #036666;
+}
+.alter-fail {
+  background-color: #f373;
+  color: #bb0d0f;
+}
