@@ -33,7 +33,7 @@ const Login = ({ setBien }) => {
     if (loginInfo.code && loginInfo.password && loginInfo.password === "1234") {
       console.log(loginInfo.code + " " + loginInfo.password);
       const res = await fetch(
-        "http://localhost:8000/api/biens/" + loginInfo.code
+        "http://127.0.0.1:8000/api/biens/" + loginInfo.code
       );
       const data = await res.json();
 

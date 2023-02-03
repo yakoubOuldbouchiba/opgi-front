@@ -9,8 +9,15 @@ import Annuaire from "./pages/Annuaire";
 import Faq from "./pages/Faq";
 import Bien from "./pages/Bien/bien";
 import SharedLayout from "../src/sharedLayout";
+import Payement from './pages/payement';
+import Seccuss from "./pages/payementSeccus";
 function App() {
   const [bien, setBien] = useState();
+  const [infoPayement, setInfoPayement] = useState({
+    amount : 0,
+    numberMonth : 0,
+    quittances:[]
+  });
   return (
     <BrowserRouter>
       <Routes>
@@ -22,7 +29,9 @@ function App() {
           <Route path="*" element={<Error />} />
         </Route>
         <Route path="/Login" element={<Login setBien={setBien} />} />
-        <Route path="/Dashbord" element={<Bien bien={bien} />} />
+        <Route path="/Dashbord" element={<Bien bien={bien} setInfoPayement={setInfoPayement}/>} />
+        <Route path="/Payement" element={<Payement infoPayement={infoPayement} />} />
+        <Route path="/Seccuss"  element={<Seccuss/>} />
       </Routes>
     </BrowserRouter>
   );

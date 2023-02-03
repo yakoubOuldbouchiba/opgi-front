@@ -1,0 +1,40 @@
+.payement-section {
+    width: 40vw;
+    max-width: 80%;
+    height: fit-content;
+    margin: 10vh auto;
+    display: flex;
+  }
+
+  .payement-info {
+    flex: 1;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .btn-payement {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    border: none;
+    background-color: #e5383b;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem 1.1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 3000 ease-in-out;
+  }
+
+  select{
+    padding: 2px 8px;
+    margin-left: 16px;
+  }
+
+  .payement-info div{
+    margin-bottom: 16px;
+  }

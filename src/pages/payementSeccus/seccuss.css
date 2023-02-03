@@ -1,0 +1,25 @@
+.secuss-section {
+    width: 30vw;
+    max-width: 80%;
+    height: fit-content;
+    margin: 10vh auto;
+    display: flex;
+  }
+  .secuss-form {
+    flex: 1;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+  }
+  .secuss-form div .secuss-form-img {
+    display: block;
+    height: 20px;
+    width: 10px;
+    object-fit: cover;
+    margin: 1px auto;
+  }
+  .secuss-form div  h3{
+    margin: auto auto;
+  }
